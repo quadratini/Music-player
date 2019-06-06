@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+table, td {
+    border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+    <audio controls="controls" hidden>
+        <source src="audio/horse.wav" type="audio/wav" />
+        Your browser does not support the audio element.
+    </audio>
+    <p> table should go under here...</p>
+    <table id="urtable">
+        <tr>
+            <td>Title</td>
+        </tr>
+        <tr>
+            <td>horse</td>
+        </tr>
+        <tr>
+            <td>morde</td>
+        </tr>
+    </table>
+    <button onclick="prev()">Previous</button>
+    <button onclick="play()">Play/Pause</button>
+    <button onclick="next()">Next</button>
+    <script>
+        var table = document.createElement("TABLE");
+        var title = table.insertRow(0);
+        title.innerHTML = "title";
+    </script>
+</body>
+<html>
