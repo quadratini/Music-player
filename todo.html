@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <h1>MAKESHIFT TODO</h1>
+
+<body>
+    <p id="tasks">
+    <input type="checkbox" id="check">
+    </p>
+    <button onclick="createTask()">Add Task</button>
+
+    <script>
+        function createTask() {
+            var p = document.getElementById('tasks');
+            var ckbx = document.createElement("INPUT");
+            ckbx.setAttribute("type", "checkbox");
+            document.body.append(ckbx);
+        }
+    </script>
+</body>
+
+
+
+
+</html>
